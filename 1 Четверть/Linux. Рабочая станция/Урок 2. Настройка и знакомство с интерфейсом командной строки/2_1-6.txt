@@ -1,0 +1,38 @@
+ppavel@ppavel-VirtualBox:~$ mkdir students
+ppavel@ppavel-VirtualBox:~$ mkdir mentors
+ppavel@ppavel-VirtualBox:~$ ls
+Desktop  Documents  Downloads  mentors  Music  Pictures  Public  students  Templates  Videos
+ppavel@ppavel-VirtualBox:~$ cd students
+ppavel@ppavel-VirtualBox:~/students$ vim students_list.txt
+ppavel@ppavel-VirtualBox:~/students$ ls
+students_list.txt
+ppavel@ppavel-VirtualBox:~/students$ cd ~/mentors
+ppavel@ppavel-VirtualBox:~/mentors$ vim mentors_list.txt
+ppavel@ppavel-VirtualBox:~/mentors$ ls
+mentors_list.txt
+ppavel@ppavel-VirtualBox:~/mentors$ mv mentors_list.txt ~/students
+ppavel@ppavel-VirtualBox:~/mentors$ ls
+ppavel@ppavel-VirtualBox:~/mentors$ cd ~/students
+ppavel@ppavel-VirtualBox:~/students$ ls
+mentors_list.txt  students_list.txt
+ppavel@ppavel-VirtualBox:~/students$ rm ~/mentors -rf
+ppavel@ppavel-VirtualBox:~/students$ cd ~
+ppavel@ppavel-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  students  Templates  Videos
+ppavel@ppavel-VirtualBox:~$ mv students students_and_mentors
+ppavel@ppavel-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  students_and_mentors  Templates  Videos
+ppavel@ppavel-VirtualBox:~$ rm students_and_mentors -rf
+ppavel@ppavel-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+
+
+
+
+
+
+
+
+
+
+

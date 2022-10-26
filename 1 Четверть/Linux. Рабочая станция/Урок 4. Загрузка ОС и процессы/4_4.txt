@@ -1,0 +1,28 @@
+ppavel@ppavel-VirtualBox:~$ mc
+
+[13]+  Stopped                 mc
+ppavel@ppavel-VirtualBox:~$ ps
+    PID TTY          TIME CMD
+   1641 pts/0    00:00:00 bash
+   2075 pts/0    00:00:00 journalctl
+   2076 pts/0    00:00:00 pager
+   2102 pts/0    00:00:00 journalctl
+   2103 pts/0    00:00:00 pager
+   2109 pts/0    00:00:00 journalctl
+   2110 pts/0    00:00:00 pager
+   2163 pts/0    00:00:00 journalctl
+   2164 pts/0    00:00:00 pager
+   2234 pts/0    00:00:00 top
+   2289 pts/0    00:00:00 journalctl
+   2290 pts/0    00:00:00 tail
+   2291 pts/0    00:00:00 journalctl
+   2316 pts/0    00:00:00 journalctl
+   2317 pts/0    00:00:00 pager
+   2319 pts/0    00:00:00 journalctl
+   2320 pts/0    00:00:00 pager
+   2397 pts/0    00:00:00 cat
+   3274 pts/0    00:00:00 mc
+   3282 pts/0    00:00:00 ps
+ppavel@ppavel-VirtualBox:~$ kill -9 3274
+
+[13]+  Killed                  mc

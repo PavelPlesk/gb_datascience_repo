@@ -1,0 +1,80 @@
+ppavel@ppavel-VirtualBox:~$ for i in {1..3}; do echo $USER; done
+ppavel
+ppavel
+ppavel
+
+ppavel@ppavel-VirtualBox:~$ cat ./6_2.sh
+#!/bin/bash
+i=1
+while (($i <= 100))
+do
+  if (($(($i % 2)) == 0)); then
+    echo $i
+  fi
+  i=$(($i+1))
+done
+ppavel@ppavel-VirtualBox:~$ ./6_2.sh
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+100
+
+ppavel@ppavel-VirtualBox:~$ nano test.txt
+ppavel@ppavel-VirtualBox:~$ crontab -e
+crontab: installing new crontab
+ppavel@ppavel-VirtualBox:~$ crontab -l
+*/10 * * * * cp ./test.txt  ./test.txt.bak
+ppavel@ppavel-VirtualBox:~$ ls
+6_1.sh  6_1.sh.save  6_2.sh  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  test.txt  Videos
+ppavel@ppavel-VirtualBox:~$ ls
+6_1.sh  6_1.sh.save  6_2.sh  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  test.txt  test.txt.bak  Videos
+
+
+
+

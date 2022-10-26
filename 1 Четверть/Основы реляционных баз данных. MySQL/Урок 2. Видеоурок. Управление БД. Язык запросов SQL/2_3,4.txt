@@ -1,0 +1,3 @@
+C:\Users\Павел Плескацевич>mysqldump example > example.sql
+
+C:\Users\Павел Плескацевич>mysqldump mysql --tables help_keyword --where="true limit 100"  > help_keyword.sql

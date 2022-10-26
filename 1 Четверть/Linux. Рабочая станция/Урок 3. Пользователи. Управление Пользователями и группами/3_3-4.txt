@@ -1,0 +1,40 @@
+ppavel@ppavel-VirtualBox:~$ sudo usermod -G sudo tempus1
+ppavel@ppavel-VirtualBox:~$ su tempus1
+Password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+tempus1@ppavel-VirtualBox:/home/ppavel$ cd ~
+tempus1@ppavel-VirtualBox:~$ sudo ls -la /root
+[sudo] password for tempus1: 
+total 28
+drwx------  4 root root 4096 сту 28 12:07 .
+drwxr-xr-x 21 root root 4096 сту 26 21:00 ..
+-rw-r--r--  1 root root 3106 ліп 28  2020 .bashrc
+drwxr-xr-x  3 root root 4096 кас 12 23:49 .cache
+-rw-r--r--  1 root root  161 кра 28  2021 .profile
+drwxr-xr-x  4 root root 4096 сту 25 15:55 snap
+-rw-------  1 root root 1219 сту 28 12:07 .viminfo
+tempus1@ppavel-VirtualBox:~$ su ppavel
+Password: 
+ppavel@ppavel-VirtualBox:/home/tempus1$ sudo deluser tempus1 sudo
+Removing user `tempus1' from group `sudo' ...
+Done.
+ppavel@ppavel-VirtualBox:/home/tempus1$ su tempus1
+Password: 
+tempus1@ppavel-VirtualBox:~$ sudo ls -la /root
+tempus1 is not in the sudoers file.  This incident will be reported.
+tempus1@ppavel-VirtualBox:~$ su ppavel
+Password: 
+ppavel@ppavel-VirtualBox:/home/tempus1$ cd ~
+ppavel@ppavel-VirtualBox:~$ sudo visudo
+ppavel@ppavel-VirtualBox::~$ su tempus1
+Password: 
+tempus1@ppavel-VirtualBox:/home/ppavel$ sudo whoami
+root
+tempus1@ppavel-VirtualBox:/home/ppavel$ sudo ls ~/root
+Sorry, user tempus1 is not allowed to execute '/usr/bin/ls /home/tempus1/root' as root on ppavel-VirtualBox.
+
+
+
+
+

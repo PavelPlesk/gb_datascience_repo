@@ -1,0 +1,39 @@
+ppavel@ppavel-VirtualBox:~$ sudo adduser tempus
+[sudo] password for ppavel: 
+Adding user `tempus' ...
+Adding new group `tempus' (1001) ...
+Adding new user `tempus' (1001) with group `tempus' ...
+Creating home directory `/home/tempus' ...
+Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: The password is a palindrome
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for tempus
+Enter the new value, or press ENTER for the default
+	Full Name []: name
+	Room Number []: 1
+	Work Phone []: 123
+	Home Phone []: 1234
+	Other []: 
+Is the information correct? [Y/n] y
+ppavel@ppavel-VirtualBox:~$ tail -n1 /etc/passwd
+tempus:x:1001:1001:name,1,123,1234:/home/tempus:/bin/bash
+ppavel@ppavel-VirtualBox:~$ tail -n1 /etc/group
+tempus:x:1001:
+ppavel@ppavel-VirtualBox:~$ sudo  vi /etc/deluser.conf
+ppavel@ppavel-VirtualBox:~$ sudo deluser tempus
+Removing user `tempus' ...
+Warning: group `tempus' has no more members.
+Done.
+ppavel@ppavel-VirtualBox:~$ tail -n1 /etc/passwd
+sshd:x:127:65534::/run/sshd:/usr/sbin/nologin
+ppavel@ppavel-VirtualBox:~$ tail -n1 /etc/group
+vboxsf:x:998:
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+ppavel@ppavel-VirtualBox:~$ sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
+[sudo] password for ppavel: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+ca-certificates is already the newest version (20210119ubuntu1).
+ca-certificates set to manually installed.
+curl is already the newest version (7.74.0-1.3ubuntu2).
+software-properties-common is already the newest version (0.99.13.1).
+software-properties-common set to manually installed.
+The following NEW packages will be installed:
+  apt-transport-https gnupg-agent
+0 upgraded, 2 newly installed, 0 to remove and 34 not upgraded.
+Need to get 6.746 B of archives.
+After this operation, 213 kB of additional disk space will be used.
+Get:1 http://by.archive.ubuntu.com/ubuntu impish/universe amd64 apt-transport-https all 2.3.9 [1.510 B]
+Get:2 http://by.archive.ubuntu.com/ubuntu impish/universe amd64 gnupg-agent all 2.2.20-1ubuntu4 [5.236 B]
+Fetched 6.746 B in 0s (79,3 kB/s) 
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 192538 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_2.3.9_all.deb ...
+Unpacking apt-transport-https (2.3.9) ...
+Selecting previously unselected package gnupg-agent.
+Preparing to unpack .../gnupg-agent_2.2.20-1ubuntu4_all.deb ...
+Unpacking gnupg-agent (2.2.20-1ubuntu4) ...
+Setting up apt-transport-https (2.3.9) ...
+Setting up gnupg-agent (2.2.20-1ubuntu4) ...
+ppavel@ppavel-VirtualBox:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+
+
+

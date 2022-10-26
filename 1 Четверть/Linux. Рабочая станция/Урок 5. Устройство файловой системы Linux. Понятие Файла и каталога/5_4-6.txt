@@ -1,0 +1,111 @@
+ppavel@ppavel-VirtualBox:~$ sudo addgroup developer
+[sudo] password for ppavel: 
+Adding group `developer' (GID 1004) ...
+Done.
+ppavel@ppavel-VirtualBox:~$ sudo adduser dev1
+Adding user `dev1' ...
+Adding new group `dev1' (1005) ...
+Adding new user `dev1' (1003) with group `dev1' ...
+Creating home directory `/home/dev1' ...
+Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: No password supplied
+Retype new password: 
+No password supplied
+passwd: Authentication token manipulation error
+passwd: password unchanged
+Try again? [y/N] n
+Changing the user information for dev1
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+ppavel@ppavel-VirtualBox:~$ sudo adduser dev2
+Adding user `dev2' ...
+Adding new group `dev2' (1006) ...
+Adding new user `dev2' (1004) with group `dev2' ...
+Creating home directory `/home/dev2' ...
+Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: No password supplied
+Retype new password: 
+No password supplied
+passwd: Authentication token manipulation error
+passwd: password unchanged
+Try again? [y/N] n
+Changing the user information for dev2
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+ppavel@ppavel-VirtualBox:~$ sudo adduser dev3
+Adding user `dev3' ...
+Adding new group `dev3' (1007) ...
+Adding new user `dev3' (1005) with group `dev3' ...
+Creating home directory `/home/dev3' ...
+Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: No password supplied
+Retype new password: 
+No password supplied
+passwd: Authentication token manipulation error
+passwd: password unchanged
+Try again? [y/N] 
+Changing the user information for dev3
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] 
+ppavel@ppavel-VirtualBox:~$ sudo usermod -G developer dev1
+ppavel@ppavel-VirtualBox:~$ sudo usermod -G developer dev2
+ppavel@ppavel-VirtualBox:~$ sudo usermod -G developer dev3
+ppavel@ppavel-VirtualBox:~$ cat /etc/group | grep developer
+developer:x:1004:dev1,dev2,dev3
+ppavel@ppavel-VirtualBox:~$ cd lesson5
+ppavel@ppavel-VirtualBox:~/lesson5$ mkdir dev
+ppavel@ppavel-VirtualBox:~/lesson5$ sudo chown dev1.developer dev
+ppavel@ppavel-VirtualBox:~/lesson5$ su dev1
+Password: 
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5$ cd dev
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev$ chmod g+s .
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev$ mkdir temp
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev$ chmod o+t temp 
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev$ ll
+total 12
+drwxrwsr-x 3 dev1   developer 4096 лют 15 14:36 ./
+drwxrwxr-x 4 ppavel ppavel    4096 лют 15 14:00 ../
+drwxrwsr-t 2 dev1   developer 4096 лют 15 14:36 temp/
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev$ mkdir data
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev$ cd data
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev/data$ cat >> hello
+hello
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev/data$ cat >> world
+world
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev/data$ chmod u-r,g-r,o-r .
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev/data$ ll
+ls: cannot open directory '.': Permission denied
+dev1@ppavel-VirtualBox:/home/ppavel/lesson5/dev/data$ cat hello
+hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+

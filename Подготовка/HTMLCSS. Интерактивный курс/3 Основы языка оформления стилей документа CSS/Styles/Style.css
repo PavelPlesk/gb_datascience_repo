@@ -1,0 +1,27 @@
+header{    background-color: peachpuff;color: rgb(209, 55, 55);
+    text-align: center; border: 3px solid peru}
+body{background-color: #f8f8f8; color: rgb(209, 55, 55);
+    text-align: left;font-size: 2ch; width: 100%;}
+div#indbody{height: 350px; text-align: center; font-size: 3ch;}
+header ul li{display: inline-block; list-style-type: none;
+    padding: 0; border: 3px solid peru; width: 300px; font-size: 2ch;
+    font-style: italic;}
+footer{background-color: rgb(245, 230, 217); color: peru;
+    text-align: left; font-size: 1pc; bottom: 0; width: 98%;}
+ul#catalogue li{display: inline-block; list-style-type: none;
+    padding: 0; border: 3px solid peru}
+.field {clear:both; text-align:right;}
+label {float:left;}
+.clientmessage{float:left; width: 40%; height: 28pc;}
+.buttons {clear:both; text-align:right;}
+.map{ height: 28pc; width: 58%; position: relative; left: 1%; text-align: left; clear:both; display: inline-block;}
+.cattitle{color: black; size: 18px; font-weight: 400; 
+    background-color: #eaeaea;}
+.shortdiscr{color: #707070; size: 14px; font-style: italic; line-height: 16px;}
+.longdiscr{color: #484343; size: 16px; line-height: 24px; font-weight: 400; 
+    line-height: 24px; text-align: left;}
+.charlist li{font-style: oblique; size: 21px; color: blueviolet; list-style-type: square;} 
+.prodimg{display: inline-block; border: 4px dashed salmon;}
+input[type="text"]{font-style: italic; font-size: 11px; width: 80%; height: 10pt}
+textarea{width: 99%;}
+

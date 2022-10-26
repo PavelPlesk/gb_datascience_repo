@@ -1,0 +1,46 @@
+ppavel@ppavel-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
+[sudo] password for ppavel: 
+ppavel@ppavel-VirtualBox:~$ sudo systemctl restart sshd
+ppavel@ppavel-VirtualBox:~$ journalctl -u ssh | tail
+лют 08 22:47:25 ppavel-VirtualBox sshd[1963]: Server listening on 0.0.0.0 port 22.
+лют 08 22:47:25 ppavel-VirtualBox sshd[1963]: Server listening on :: port 22.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+лют 08 23:02:11 ppavel-VirtualBox sshd[1963]: Received signal 15; terminating.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+лют 08 23:02:11 ppavel-VirtualBox sshd[2098]: Server listening on 0.0.0.0 port 22.
+лют 08 23:02:11 ppavel-VirtualBox sshd[2098]: Server listening on :: port 22.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+ppavel@ppavel-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
+ppavel@ppavel-VirtualBox:~$ sudo systemctl reload sshd
+ppavel@ppavel-VirtualBox:~$ journalctl -u ssh | tail
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+лют 08 23:02:11 ppavel-VirtualBox sshd[2098]: Server listening on 0.0.0.0 port 22.
+лют 08 23:02:11 ppavel-VirtualBox sshd[2098]: Server listening on :: port 22.
+лют 08 23:02:11 ppavel-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+лют 08 23:09:30 ppavel-VirtualBox systemd[1]: Reloading OpenBSD Secure Shell server.
+лют 08 23:09:30 ppavel-VirtualBox sshd[2098]: Received SIGHUP; restarting.
+лют 08 23:09:30 ppavel-VirtualBox systemd[1]: Reloaded OpenBSD Secure Shell server.
+лют 08 23:09:30 ppavel-VirtualBox sshd[2098]: Server listening on 0.0.0.0 port 22.
+лют 08 23:09:30 ppavel-VirtualBox sshd[2098]: Server listening on :: port 22.
+
+restart остановил процесс по сигналу 15 и создал новый процесс с новым pid; 
+reload перезапустил существующий процесс
+
+ppavel@ppavel-VirtualBox:~$ cat > 4_3.txt
+hello
+world
+ppavel@ppavel-VirtualBox:~$ more 4_3.txt
+hello
+world
+
+Сочетание ctrl+D передает команду EOF (конец файла).
+
+
+
+
+
+
+ 

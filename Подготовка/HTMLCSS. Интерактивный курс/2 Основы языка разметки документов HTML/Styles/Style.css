@@ -1,0 +1,16 @@
+header{    background-color: peachpuff;color: rgb(209, 55, 55);
+    text-align: center; border: 3px solid peru}
+body{background-color: rgb(245, 230, 217); color: rgb(209, 55, 55);
+    text-align: left;font-size: 2ch; width: 100%;}
+div#indbody{height: 350px; text-align: center; font-size: 3ch;}
+header ul li{display: inline-block; list-style-type: none;
+    padding: 0; border: 3px solid peru; width: 300px; font-size: 2ch}
+footer{background-color: rgb(245, 230, 217); color: peru;
+    text-align: left; font-size: 1pc; bottom: 0; width: 98%; }
+ul#catalogue li{display: inline-block; list-style-type: none;
+    padding: 0; border: 3px solid peru}
+.field {clear:both; text-align:right;}
+label {float:left;}
+.clientmessage{float:left; width: 40%; height: 26pc;}
+.buttons {clear:both; text-align:right;}
+.map{ height: 26pc; position:relative; left: 2%; }

@@ -1,0 +1,69 @@
+ppavel@ppavel-VirtualBox:~$ adduser tempus1 tempus2 tempus3
+adduser: Only root may add a user or group to the system.
+ppavel@ppavel-VirtualBox:~$ sudo adduser tempus1 tempus2 tempus3
+adduser: Only one or two names allowed.
+ppavel@ppavel-VirtualBox:~$ sudo adduser tempus1 tempus2
+adduser: The user `tempus1' does not exist.
+ppavel@ppavel-VirtualBox:~$ sudo adduser tempus1
+Adding user `tempus1' ...
+Adding new group `tempus1' (1001) ...
+Adding new user `tempus1' (1001) with group `tempus1' ...
+Creating home directory `/home/tempus1' ...
+Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: The password is a palindrome
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for tempus1
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+ppavel@ppavel-VirtualBox:~$ sudo adduser tempus2
+Adding user `tempus2' ...
+Adding new group `tempus2' (1002) ...
+Adding new user `tempus2' (1002) with group `tempus2' ...
+Creating home directory `/home/tempus2' ...
+Copying files from `/etc/skel' ...
+New password: 
+BAD PASSWORD: The password is a palindrome
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for tempus2
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+ppavel@ppavel-VirtualBox:~$ tail -n2 /etc/passwd
+tempus1:x:1001:1001:,,,:/home/tempus1:/bin/bash
+tempus2:x:1002:1002:,,,:/home/tempus2:/bin/bash
+ppavel@ppavel-VirtualBox:~$ sudo usermod -g 1001 tempus2
+ppavel@ppavel-VirtualBox:~$ tail -n2 /etc/passwd
+tempus1:x:1001:1001:,,,:/home/tempus1:/bin/bash
+tempus2:x:1002:1001:,,,:/home/tempus2:/bin/bash
+ppavel@ppavel-VirtualBox:~$ sudo usermod -g 1002 tempus1
+ppavel@ppavel-VirtualBox:~$ tail -n2 /etc/passwd
+tempus1:x:1001:1002:,,,:/home/tempus1:/bin/bash
+tempus2:x:1002:1001:,,,:/home/tempus2:/bin/bash
+ppavel@ppavel-VirtualBox:~$ sudo addgroup tempgr
+Adding group `tempgr' (GID 1003) ...
+Done.
+ppavel@ppavel-VirtualBox:~$ sudo usermod -G tempgr tempus1
+ppavel@ppavel-VirtualBox:~$ sudo usermod -G 1003 tempus2
+ppavel@ppavel-VirtualBox:~$ tail -n3 /etc/group
+tempus1:x:1001:
+tempus2:x:1002:
+tempgr:x:1003:tempus1,tempus2
+ppavel@ppavel-VirtualBox:~$ sudo deluser tempus1 tempgr
+Removing user `tempus1' from group `tempgr' ...
+Done.
+ppavel@ppavel-VirtualBox:~$ tail -n3 /etc/group
+tempus1:x:1001:
+tempus2:x:1002:
+tempgr:x:1003:tempus2

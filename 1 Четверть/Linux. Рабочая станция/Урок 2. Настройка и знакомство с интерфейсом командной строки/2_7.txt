@@ -1,0 +1,64 @@
+ppavel@ppavel-VirtualBox:~$ systemctl status sshd
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2022-01-26 19:44:22 +03; 1min 44s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 711 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+   Main PID: 725 (sshd)
+      Tasks: 1 (limit: 1106)
+     Memory: 1.3M
+        CPU: 29ms
+     CGroup: /system.slice/ssh.service
+             └─725 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+сту 26 19:44:21 ppavel-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+сту 26 19:44:22 ppavel-VirtualBox sshd[725]: Server listening on 0.0.0.0 port 22.
+сту 26 19:44:22 ppavel-VirtualBox sshd[725]: Server listening on :: port 22.
+сту 26 19:44:22 ppavel-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+ppavel@ppavel-VirtualBox:~$ sudo ufw disable
+[sudo] password for ppavel: 
+Firewall stopped and disabled on system startup
+ppavel@ppavel-VirtualBox:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.100.26  netmask 255.255.255.0  broadcast 192.168.100.255
+        inet6 fe80::a9d7:78a7:333b:bf02  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:2d:0e:32  txqueuelen 1000  (Ethernet)
+        RX packets 820  bytes 321097 (321.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 381  bytes 48771 (48.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 215  bytes 18609 (18.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 215  bytes 18609 (18.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+C:\Users\Павел Плескацевич>ssh ppavel@192.168.100.26
+The authenticity of host '192.168.100.26 (192.168.100.26)' can't be established.
+ECDSA key fingerprint is SHA256:QmsGu4N93fTp6FsTbLSYS94Ruio8NQ+VUKIuavyMjOA.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.100.26' (ECDSA) to the list of known hosts.
+ppavel@192.168.100.26's password:
+Welcome to Ubuntu 21.10 (GNU/Linux 5.13.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+4 updates can be applied immediately.
+4 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+ppavel@ppavel-VirtualBox:~$

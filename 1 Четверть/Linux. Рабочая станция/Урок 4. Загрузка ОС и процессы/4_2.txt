@@ -1,0 +1,45 @@
+ppavel@ppavel-VirtualBox:~$ ll
+total 128
+drwxr-x--- 14 ppavel ppavel  4096 лют  8 17:40 ./
+drwxr-xr-x  6 root   root    4096 сту 28 12:24 ../
+-rw-rw-r--  1 ppavel ppavel    37 лют  8 17:22 4_1.txt
+-rw-rw-r--  1 ppavel ppavel    16 лют  8 11:55 6_1.sh
+-rw-rw-r--  1 ppavel ppavel     1 лют  8 11:56 6_1.sh.save
+-rwxrw-r--  1 ppavel ppavel   107 лют  8 15:44 6_2.sh*
+-rw-rw-r--  1 ppavel ppavel  1035 лют  8 13:36 .bash_history
+-rw-rw-r--  1 ppavel ppavel   220 сту 25 15:39 .bash_logout
+-rw-rw-r--  1 ppavel ppavel  3771 сту 25 15:39 .bashrc
+drwxrwxr-x 12 ppavel ppavel  4096 сту 26 20:17 .cache/
+drwxrwxr-x 12 ppavel ppavel  4096 сту 25 16:11 .config/
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Desktop/
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Documents/
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Downloads/
+drwxrwxr-x  3 ppavel ppavel  4096 сту 25 15:55 .local/
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Music/
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Pictures/
+-rw-rw-r--  1 ppavel ppavel   807 сту 25 15:39 .profile
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Public/
+-rw-rw-r--  1 ppavel ppavel    66 лют  8 16:08 .selected_editor
+drwxrwxr-x  2 ppavel ppavel  4096 сту 26 21:18 .ssh/
+-rw-rw-r--  1 ppavel ppavel     0 сту 25 16:14 .sudo_as_admin_successful
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Templates/
+-rw-rw-r--  1 ppavel ppavel     7 лют  8 16:16 test.txt
+-rw-rw-r--  1 ppavel ppavel     7 лют  8 17:50 test.txt.bak
+-rw-r-----  1 ppavel ppavel     5 лют  8 13:24 .vboxclient-clipboard.pid
+-rw-rw-r--  1 ppavel ppavel     5 лют  8 13:24 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 ppavel ppavel     5 лют  8 13:24 .vboxclient-draganddrop.pid
+-rw-r-----  1 ppavel ppavel     5 лют  8 13:24 .vboxclient-seamless.pid
+drwxrwxr-x  2 ppavel ppavel  4096 сту 25 15:55 Videos/
+-rw-rw-r--  1 ppavel ppavel 11039 сту 28 14:13 .viminfo
+ppavel@ppavel-VirtualBox:~$ ll | cut -c 1-10 | sort | uniq
+drwxrwxr-x
+drwxr-x---
+drwxr-xr-x
+-rw-r-----
+-rw-rw-r--
+-rwxrw-r--
+total 128
+
+
+
+

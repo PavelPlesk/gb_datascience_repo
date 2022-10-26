@@ -1,0 +1,40 @@
+C:\Users\Павел Плескацевич>ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Павел Плескацевич/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\Павел Плескацевич/.ssh/id_rsa.
+Your public key has been saved in C:\Users\Павел Плескацевич/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:I4EoJYDVnHV13VdyxIIUt83+iAgQsuppyPjfw3Pd4jA Павел Плескацевич@LAPTOP-AJCS2F9N
+The key's randomart image is:
++---[RSA 3072]----+
+|=.oo.oo ....++o+=|
+|.o .++ o   ...o*+|
+|. . o o       ..+|
+| . .   o       . |
+|  .   . S       .|
+|oo .   . o . . ..|
+|o.+  .  E.... . .|
+| o   .+ .oo .    |
+|  ... .+ ...     |
++----[SHA256]-----+
+C:\Users\Павел Плескацевич>ssh-copy-id ppavel@192.168.100.26
+"ssh-copy-id" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+ppavel@ppavel-VirtualBox:~$ vim /.ssh/authorized_keys
+
+C:\Users\Павел Плескацевич>ssh ppavel@192.168.100.26
+Welcome to Ubuntu 21.10 (GNU/Linux 5.13.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+4 updates can be applied immediately.
+4 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Last login: Wed Jan 26 21:19:06 2022 from 192.168.100.22
+ppavel@ppavel-VirtualBox:~$

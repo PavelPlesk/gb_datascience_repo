@@ -1,0 +1,37 @@
+header{background-color: peachpuff;color: rgb(209, 55, 55);
+    text-align: center; border: 3px solid peru; width: 98%;}
+body{background-color: #f8f8f8; color: rgb(209, 55, 55);
+    text-align: left;font-size: 2ch; width: 100%;}
+div#indbody{height: 350px; text-align: center; font-size: 3ch;}
+.menu li{display: inline-block; list-style-type: none;
+    padding: 0; border: 3px solid peru; width: 300px; font-size: 2ch;
+    font-style: italic;}
+.menu li:hover{ color: brown;}
+footer{background-color: rgb(245, 230, 217); color: peru;
+    text-align: left; font-size: 1pc; bottom: 0; width: 98%;}
+ul#catalogue li{display: inline-block; list-style-type: none;
+    padding: 0; border: 3px solid peru}
+.field {clear:both; text-align:right;}
+label {float:left;}
+.clientmessage{float:left; width: 40%; height: 28pc;}
+.buttons {clear:both; text-align:right;}
+.map{ height: 28pc; width: 58%; position: relative; left: 1%; text-align: left; clear:both; display: inline-block;}
+.cattitle{color: black; size: 18px; font-weight: 400; 
+    background-color: #eaeaea;}
+.shortdiscr{color: #484343; size: 16px; line-height: 24px; font-weight: 400; 
+    line-height: 24px; text-align: left;}
+.longdiscr{color: #484343; size: 16px; line-height: 24px; font-weight: 400; 
+    line-height: 24px; text-align: left;}
+.charlist li{ size: 21px; color: black; list-style-type: square;} 
+.prodimg{display: inline-block; border: 4px dashed salmon;}
+textarea{width: 99%; text-transform: capitalize}
+input[type="text"]{color: grey; background-color:white; font-style: italic; 
+    font-size: 11px; width: 80%; height: 10pt; text-transform: capitalize}
+input[name="email"]{color: green; background-color:rgb(215, 238, 215);font-style: italic; font-size: 11px; width: 80%; height: 10pt}
+input[name="email"]:placeholder-shown{color: grey; background-color:white; font-style: italic; 
+    font-size: 11px; width: 80%; height: 10pt}
+.size{border-collapse: collapse; width: 50%; color: black;}
+.size td{border: 1px solid grey;}
+.size tr:first-child{height: 30pt; text-align: center; background-color: khaki;}
+.shortdiscr:first-letter, .longdiscr:first-letter{font-size: 30px; color: brown;}
+.prodimg:hover{border-color: transparent;}

@@ -1,0 +1,48 @@
+ppavel@ppavel-VirtualBox:~$ echo "deb [arch=amd64] http://nginx.org/packages/ubuntu focal nginx" | sudo tee -a /etc/apt/sources.list
+deb http://nginx.org/packages/ubuntu focal nginx
+ppavel@ppavel-VirtualBox:~$ curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+OK
+ppavel@ppavel-VirtualBox:~$ sudo apt update
+Hit:1 http://by.archive.ubuntu.com/ubuntu impish InRelease
+Hit:2 http://by.archive.ubuntu.com/ubuntu impish-updates InRelease             
+Hit:3 http://by.archive.ubuntu.com/ubuntu impish-backports InRelease          
+Get:4 http://nginx.org/packages/ubuntu focal InRelease [3.584 B]               
+Hit:5 http://security.ubuntu.com/ubuntu impish-security InRelease              
+Fetched 3.584 B in 1s (5.559 B/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+35 packages can be upgraded. Run 'apt list --upgradable' to see them.
+pavel@ppavel-VirtualBox:~$ sudo apt install nginx -y
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  nginx
+0 upgraded, 1 newly installed, 0 to remove and 35 not upgraded.
+Need to get 879 kB of archives.
+After this operation, 3.117 kB of additional disk space will be used.
+Get:1 http://nginx.org/packages/ubuntu focal/nginx amd64 nginx amd64 1.20.2-1~focal [879 kB]
+Fetched 879 kB in 1s (1.418 kB/s)
+Selecting previously unselected package nginx.
+(Reading database ... 192536 files and directories currently installed.)
+Preparing to unpack .../nginx_1.20.2-1~focal_amd64.deb ...
+----------------------------------------------------------------------
+Thanks for using nginx!
+Please find the official documentation for nginx here:
+* https://nginx.org/en/docs/
+Please subscribe to nginx-announce mailing list to get
+the most important news about nginx:
+* https://nginx.org/en/support.html
+Commercial subscriptions for nginx are available on:
+* https://nginx.com/products/
+----------------------------------------------------------------------
+Unpacking nginx (1.20.2-1~focal) ...
+Setting up nginx (1.20.2-1~focal) ...
+Processing triggers for man-db (2.9.4-2) ...
+ppavel@ppavel-VirtualBox:~$ sudo dpkg -r nginx
+(Reading database ... 192556 files and directories currently installed.)
+Removing nginx (1.20.2-1~focal) ...
+Processing triggers for man-db (2.9.4-2) ...
+

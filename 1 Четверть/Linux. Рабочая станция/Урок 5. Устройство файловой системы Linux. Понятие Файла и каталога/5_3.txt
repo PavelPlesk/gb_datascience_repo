@@ -1,0 +1,10 @@
+ppavel@ppavel-VirtualBox:~/lesson5$ chmod 664 file1
+ppavel@ppavel-VirtualBox:~/lesson5$ chmod 600 file2
+ppavel@ppavel-VirtualBox:~/lesson5$ ll
+total 20
+drwxrwxr-x  3 ppavel ppavel 4096 лют 14 16:28 ./
+drwxr-x--- 15 ppavel ppavel 4096 лют 14 15:44 ../
+-rw-rw-r--  1 ppavel ppavel   12 лют 14 15:56 file1
+-rw-------  1 ppavel ppavel    4 лют 14 16:28 file2
+drwxrwxr-x  2 ppavel ppavel 4096 лют 14 16:04 links/
+

@@ -1,0 +1,144 @@
+ppavel@ppavel-VirtualBox:~$ echo Hello! > 4_1.txt
+ppavel@ppavel-VirtualBox:~$ echo How are you? >> 4_1.txt
+ppavel@ppavel-VirtualBox:~$ echo Have a nice day! >> 4_1.txt
+ppavel@ppavel-VirtualBox:~$ cat 4_1.txt
+Hello!
+How are you?
+Have a nice day!
+ppavel@ppavel-VirtualBox:~$ cat /etc/* >temp.txt 2>errors.txt
+ppavel@ppavel-VirtualBox:~$ cat errors.txt
+cat: /etc/acpi: Is a directory
+cat: /etc/alsa: Is a directory
+cat: /etc/alternatives: Is a directory
+cat: /etc/apm: Is a directory
+cat: /etc/apparmor: Is a directory
+cat: /etc/apparmor.d: Is a directory
+cat: /etc/apport: Is a directory
+cat: /etc/apt: Is a directory
+cat: /etc/avahi: Is a directory
+cat: /etc/bash_completion.d: Is a directory
+cat: /etc/binfmt.d: Is a directory
+cat: /etc/bluetooth: Is a directory
+cat: /etc/brlapi.key: Permission denied
+cat: /etc/brltty: Is a directory
+cat: /etc/ca-certificates: Is a directory
+cat: /etc/chatscripts: Is a directory
+cat: /etc/console-setup: Is a directory
+cat: /etc/cracklib: Is a directory
+cat: /etc/cron.d: Is a directory
+cat: /etc/cron.daily: Is a directory
+cat: /etc/cron.hourly: Is a directory
+cat: /etc/cron.monthly: Is a directory
+cat: /etc/cron.weekly: Is a directory
+cat: /etc/cups: Is a directory
+cat: /etc/cupshelpers: Is a directory
+cat: /etc/dbus-1: Is a directory
+cat: /etc/dconf: Is a directory
+cat: /etc/default: Is a directory
+cat: /etc/depmod.d: Is a directory
+cat: /etc/dhcp: Is a directory
+cat: /etc/dictionaries-common: Is a directory
+cat: /etc/dpkg: Is a directory
+cat: /etc/emacs: Is a directory
+cat: /etc/environment.d: Is a directory
+cat: /etc/firefox: Is a directory
+cat: /etc/fonts: Is a directory
+cat: /etc/fwupd: Is a directory
+cat: /etc/gdb: Is a directory
+cat: /etc/gdm3: Is a directory
+cat: /etc/geoclue: Is a directory
+cat: /etc/ghostscript: Is a directory
+cat: /etc/glvnd: Is a directory
+cat: /etc/gnome: Is a directory
+cat: /etc/groff: Is a directory
+cat: /etc/grub.d: Is a directory
+cat: /etc/gshadow: Permission denied
+cat: /etc/gshadow-: Permission denied
+cat: /etc/gss: Is a directory
+cat: /etc/gtk-2.0: Is a directory
+cat: /etc/gtk-3.0: Is a directory
+cat: /etc/hp: Is a directory
+cat: /etc/ifplugd: Is a directory
+cat: /etc/init: Is a directory
+cat: /etc/init.d: Is a directory
+cat: /etc/initramfs-tools: Is a directory
+cat: /etc/insserv.conf.d: Is a directory
+cat: /etc/ipp-usb: Is a directory
+cat: /etc/iproute2: Is a directory
+cat: /etc/kernel: Is a directory
+cat: /etc/ldap: Is a directory
+cat: /etc/ld.so.conf.d: Is a directory
+cat: /etc/libblockdev: Is a directory
+cat: /etc/libnl-3: Is a directory
+cat: /etc/libpaper.d: Is a directory
+cat: /etc/libreoffice: Is a directory
+cat: /etc/logcheck: Is a directory
+cat: /etc/logrotate.d: Is a directory
+cat: /etc/modprobe.d: Is a directory
+cat: /etc/modules-load.d: Is a directory
+cat: /etc/netplan: Is a directory
+cat: /etc/network: Is a directory
+cat: /etc/networkd-dispatcher: Is a directory
+cat: /etc/NetworkManager: Is a directory
+cat: /etc/newt: Is a directory
+cat: /etc/openvpn: Is a directory
+cat: /etc/opt: Is a directory
+cat: /etc/PackageKit: Is a directory
+cat: /etc/pam.d: Is a directory
+cat: /etc/pcmcia: Is a directory
+cat: /etc/perl: Is a directory
+cat: /etc/pki: Is a directory
+cat: /etc/pm: Is a directory
+cat: /etc/polkit-1: Is a directory
+cat: /etc/ppp: Is a directory
+cat: /etc/profile.d: Is a directory
+cat: /etc/pulse: Is a directory
+cat: /etc/python3: Is a directory
+cat: /etc/python3.9: Is a directory
+cat: /etc/rc0.d: Is a directory
+cat: /etc/rc1.d: Is a directory
+cat: /etc/rc2.d: Is a directory
+cat: /etc/rc3.d: Is a directory
+cat: /etc/rc4.d: Is a directory
+cat: /etc/rc5.d: Is a directory
+cat: /etc/rc6.d: Is a directory
+cat: /etc/rcS.d: Is a directory
+cat: /etc/rsyslog.d: Is a directory
+cat: /etc/sane.d: Is a directory
+cat: /etc/security: Is a directory
+cat: /etc/selinux: Is a directory
+cat: /etc/sensors.d: Is a directory
+cat: /etc/sgml: Is a directory
+cat: /etc/shadow: Permission denied
+cat: /etc/shadow-: Permission denied
+cat: /etc/skel: Is a directory
+cat: /etc/snmp: Is a directory
+cat: /etc/speech-dispatcher: Is a directory
+cat: /etc/ssh: Is a directory
+cat: /etc/ssl: Is a directory
+cat: /etc/sudoers: Permission denied
+cat: /etc/sudoers.d: Is a directory
+cat: /etc/sysctl.d: Is a directory
+cat: /etc/systemd: Is a directory
+cat: /etc/terminfo: Is a directory
+cat: /etc/thermald: Is a directory
+cat: /etc/thunderbird: Is a directory
+cat: /etc/tmpfiles.d: Is a directory
+cat: /etc/ubuntu-advantage: Is a directory
+cat: /etc/udev: Is a directory
+cat: /etc/udisks2: Is a directory
+cat: /etc/ufw: Is a directory
+cat: /etc/update-manager: Is a directory
+cat: /etc/update-motd.d: Is a directory
+cat: /etc/update-notifier: Is a directory
+cat: /etc/UPower: Is a directory
+cat: /etc/usb_modeswitch.d: Is a directory
+cat: /etc/vim: Is a directory
+cat: /etc/vmware-tools: Is a directory
+cat: /etc/vulkan: Is a directory
+cat: /etc/wpa_supplicant: Is a directory
+cat: /etc/X11: Is a directory
+cat: /etc/xdg: Is a directory
+cat: /etc/xml: Is a directory
+
+
